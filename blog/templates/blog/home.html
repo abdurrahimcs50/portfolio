@@ -1,0 +1,201 @@
+{% extends 'blog/base.html' %}
+{% block text %}
+    {% load static %}
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Jekyll v3.8.5">
+        <title>Abdur Rahim Website</title>
+
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+        <!-- Bootstrap core CSS -->
+        <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
+
+
+        <!-- Custom styles for this template -->
+       <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    </head>
+    <body>
+{% for x in var_1 %}
+
+{{ x.summary }}
+ {% endfor %}
+
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Well Come To My Site</h1>
+                <p class="lead text-muted">“That which does not kill us, makes us stronger.”Friedrich Nietzsche.</p>
+                <p>
+                    <a href="{% url 'contacts' %}" class="btn btn-primary my-2">Contact me</a>
+
+                </p>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Here start My Introduction -->
+
+       <div class="jumbotron jumbotron-fluid">
+          <div class="about-image text-center">
+                    <img class="img-fluid" src="{% static 'blog/images/r.jpg' %}" width="200" height="200" alt="about">
+            <div class="container">
+                <h1 class="display-4">Abdur Rahim</h1><br>
+                <p class="lead">
+                    My Name Is Abdur Rahim I Am a Computer Science for Web Programming Student in Harvardx.I Born And brought up in Bangladesh.I have total 5 years of work experience and presently I am working as a Web Developer in MARITSERVICES.I want to become A Software Developer One day And in my free time I love to Watch Movie And I love to Read Book.This is all about me.</p><br>
+                
+               <div class="about-contacts py-2">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><i class="fas fa-map-marker-alt"></i> Location: Rangpur,Dhaka,Bangladesh</p>
+                            <p><i class="fas fa-phone-alt"></i> Phone: +8801610024750</p>
+                        </div>
+
+                        <div class="col-md-6">
+                            <p><i class="fas fa-calendar-alt"></i> Age: 29</p>
+                            <p><i class="fas fa-envelope"></i> Email: abdurrahimcs50@gmail.com</p>
+                        </div>
+
+                    </div>
+                    
+               </div>
+            </div>
+        </div> <br>                  
+
+    <!-- Here start My Portfolio Pojects -->
+    <br><br><br>
+    <div class="container">
+        <h2 class="projects">MY PORTFOLIO PROJECTS</h2>
+    </div>
+    <br>
+    <div class="container">
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">I Designed News website. <span
+                        class="text-muted"></span></h2>
+                <p class="lead">I Develop this website using Django Framework.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="{% static 'blog/images/A.PNG' %}" width="500" height="500" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Here ends My Portfolio Pojects -->
+    <!-- Here start My Portfolio Pojects -->
+    <div class="container">
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">I designed Dentalwebsite. <span class="text-muted"></span>
+                </h2>
+                <p class="lead">I Develop this website using Django Framework.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="{% static 'blog/images/D.PNG' %}" width="500" height="500" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Here ends My Portfolio Pojects -->
+    <div class="container">
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">I designed Ecommerce website. <span class="text-muted"></span></h2>
+                <p class="lead">I Develop this website using Django Framework.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="{% static 'blog/images/B.PNG' %}" width="500" height="500" alt="">
+            </div>
+        </div>
+    </div>
+
+<!-- Here start My Portfolio Pojects -->
+    <div class="container">
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">I designed  Minimalistic Website. <span class="text-muted"></span>
+                </h2>
+                <p class="lead">I Develop this website using Django Framework.</p>
+                    
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="{% static 'blog/images/C.PNG' %}" width="500" height="500" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Here ends My Portfolio Pojects -->
+
+    <!-- /END THE FEATURETTES -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="{% url 'home' %}">Back to top</a>
+            </p>
+        </div>
+        <div class="footer-bottom text-center py-3">
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | “Developed ”<i class="fa fa-heart-o" aria-hidden="true"></i> By <a href="#" target="_blank">Abdur Rahim</a></p>
+         </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+            crossorigin="anonymous"></script>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock text %}

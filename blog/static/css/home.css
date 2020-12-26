@@ -1,0 +1,54 @@
+    .bd-placeholder-img {
+                    font-size: 1.125rem;
+                    text-anchor: middle;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                }
+
+
+    display-4{
+        text-align: center;  
+        color: green;
+     }
+    .lead{
+    color: black;
+    }
+    .projects{
+     text-align: center;
+    color: green;
+                    
+     }
+
+
+     div .copywrite-content p{
+        color: red;
+     }
+
+    @media (min-width: 768px) {
+     .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+     }
+
+    .about-image img{
+        display:ruby-base-container;
+        border-radius: 68% 68% 2% 68% / 35% 50% 0% 38%;
+        animation: border_animation 2s ease-in-out infinite both alternate;
+        margin: 100px;
+        float: right;
+    }
+    @keyframes border_animation{
+        0%{
+            border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        }
+        100%{
+            border-radius: 2% 68% 68% / 35% 50% 0 35%;
+        }
+    }
+    @media screen and (max-width: 425px){
+        .about-image img{
+            border-radius: 0 !important;
+            animation: none !important;
+        }
+    }
